@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    druid:
+      remove-abandoned: true
+      log-abandoned: true
+      filter:
+        slf4j:
+          statement-executable-sql-log-enable: true
+          statement-log-enabled: true
+
+druid:
+  monitor:
+    stat-view-servlet:
+      enabled: true
+
+logging:
+  level:
+    druid.sql.Statement: debug

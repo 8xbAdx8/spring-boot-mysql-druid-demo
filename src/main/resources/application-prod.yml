@@ -1,0 +1,23 @@
+spring:
+  sql:
+    init:
+      mode: never
+  datasource:
+    druid:
+      remove-abandoned: false
+      log-abandoned: false
+      filter:
+        slf4j:
+          statement-executable-sql-log-enable: false
+          statement-log-enabled: false
+
+druid:
+  monitor:
+    stat-view-servlet:
+      enabled: ${DRUID_MONITOR_ENABLED:false}
+    web-stat-filter:
+      profile-enable: false
+
+logging:
+  level:
+    druid.sql.Statement: warn

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <!-- 使用项目目录内的 Maven 仓库，保证本项目换目录后仍可独立构建 -->
+    <localRepository>D:\codexproject\spring-boot-mysql-druid-demo\.m2\repository</localRepository>
+
+    <mirrors>
+        <mirror>
+            <id>aliyunmaven</id>
+            <name>Aliyun Maven Public</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <mirrorOf>*</mirrorOf>
+        </mirror>
+    </mirrors>
+</settings>
